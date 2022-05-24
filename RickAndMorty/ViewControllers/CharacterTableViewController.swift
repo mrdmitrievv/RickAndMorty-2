@@ -1,7 +1,6 @@
-
 import UIKit
 
-class ChracterTableViewController: UITableViewController {
+class CharacterTableViewController: UITableViewController {
     
     //MARK: Private properties
     private var rickAndMorty: RickAndMorty?
@@ -92,7 +91,7 @@ class ChracterTableViewController: UITableViewController {
     }
     
     private func fetchData(from url: String?) {
-        NetworkManager.shared.fetchData(from: url) {  rickAndMorty in
+        NetworkManager.shared.fetchData(from: url) { rickAndMorty in
             self.rickAndMorty = rickAndMorty
             self.tableView.reloadData()
         }
@@ -100,7 +99,7 @@ class ChracterTableViewController: UITableViewController {
 }
 
 // MARK: - UISearchResultsUpdating
-extension ChracterTableViewController: UISearchResultsUpdating {
+extension CharacterTableViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         filterContentForSearchText(searchController.searchBar.text!)
     }
