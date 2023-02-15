@@ -1,4 +1,4 @@
 # RickAndMorty
 
-An example of the implementation of an application with using public API based on the cartoon "Rick and Morty". MVC pattern, caching images (URLCache)
+A simple app for "Rick and Morty"s fans where you can see information about your favorite character and find all episodes in which he participated.
 
